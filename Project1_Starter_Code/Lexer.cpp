@@ -140,5 +140,5 @@ std::string Lexer::toString() {
     for (unsigned int i=0; i < tokens.size(); i++){
         tokenlist += tokens.at(i)->toString() + "\n";
     }
-    return tokenlist + "Total Tokens =  " + to_string(tokens.size());
+    return tokenlist + "Total Tokens = " + to_string(tokens.size());
 }

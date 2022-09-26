@@ -53,10 +53,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\stewj\Downloads\Project1_Starter_Code
+CMAKE_SOURCE_DIR = C:\Users\stewj\Downloads\project1\Project1_Starter_Code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\stewj\Downloads\Project1_Starter_Code\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\stewj\Downloads\project1\Project1_Starter_Code\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/Project1_Starter_Code.dir/clean
 CMakeFiles/Project1_Starter_Code.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project1_Starter_Code.dir\build.make CMakeFiles/Project1_Starter_Code.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project1_Starter_Code.dir\build.make CMakeFiles/Project1_Starter_Code.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\stewj\Downloads\Project1_Starter_Code\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target Project1_Starter_Code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\stewj\Downloads\project1\Project1_Starter_Code\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target Project1_Starter_Code"
 .PHONY : CMakeFiles/Project1_Starter_Code.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Project1_Starter_Code.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stewj\Downloads\Project1_Starter_Code\cmake-build-debug\CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stewj\Downloads\project1\Project1_Starter_Code\cmake-build-debug\CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Project1_Starter_Code.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stewj\Downloads\Project1_Starter_Code\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stewj\Downloads\project1\Project1_Starter_Code\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Project1_Starter_Code.dir/rule
 
 # Convenience name for target.
