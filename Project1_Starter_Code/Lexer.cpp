@@ -75,7 +75,11 @@ using namespace std;
                 if (inputRead > maxRead) {
                     maxRead = inputRead;
                     maxAutomaton = automata.at(j);
+                    if(maxAutomaton->type == TokenType::UNDEFINED){
+                        maxRead = input.size();
+                    }
                 }
+
             }
             if (maxRead > 0) {
 

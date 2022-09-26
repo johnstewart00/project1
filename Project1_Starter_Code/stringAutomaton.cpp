@@ -16,9 +16,11 @@ void stringAutomaton::S0(const std::string& input){
     }
 }
 void stringAutomaton::S1(const std::string& input){
-    unsigned int x = index;
-    if(x >= input.size()){
-        Serr();
+  //  unsigned int x = index;
+    unsigned int y = inputRead;
+    if(y >= input.size()){
+        type =  TokenType::UNDEFINED;
+        return;
     }
     if(input[index]!= '\''){
         if(input[index] == '\n'){
@@ -26,11 +28,11 @@ void stringAutomaton::S1(const std::string& input){
         }
         inputRead++;
         index++;
-        size_t f = input.substr(index).find("\'");
-        if( f == std::string::npos){
-            Serr();
-            return;
-        }
+  //      size_t f = input.substr(index).find("\'");
+//        if( f == std::string::npos){
+//            Serr();
+//            return;
+//        }
        S1(input);
     }
     else {
