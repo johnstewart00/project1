@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/stewj/Downloads/Project1_Starter_Code/Automaton.h
+Token.h
+C:/Users/stewj/Downloads/Project1_Starter_Code/Token.h
+
+C:/Users/stewj/Downloads/Project1_Starter_Code/Token.h
+string
+-
+
+C:/Users/stewj/Downloads/Project1_Starter_Code/stringAutomaton.cpp
+stringAutomaton.h
+C:/Users/stewj/Downloads/Project1_Starter_Code/stringAutomaton.h
+
+C:/Users/stewj/Downloads/Project1_Starter_Code/stringAutomaton.h
+Automaton.h
+C:/Users/stewj/Downloads/Project1_Starter_Code/Automaton.h
+
