@@ -27,17 +27,24 @@ void commentAutomaton::S1(const std::string &input) {
 }
 void commentAutomaton::S2(const std::string& input){
     // this is for block comments
+    unsigned int y = inputRead;
+    if(y >= input.size()){
+        type =  TokenType::UNDEFINED;
+        return;
+    }
     if(input[index] != '|'){
-        index++;
-        inputRead++;
         if(input[index] == '\n'){
             newLines++;
         }
-        size_t f = input.substr(index).find("|");
-        if( f == std::string::npos){
-            Serr();
-            return;
-        }
+        index++;
+        inputRead++;
+
+
+//        size_t f = input.substr(index).find("|");
+//        if( f == std::string::npos){   // recently commented out
+//            Serr();
+//            return;
+//        } // recently commented out to here
 //        unsigned int x = index;
 //        if(x == input.size()){ // index is as big as file, comment is incomplete
 //            Serr();
@@ -56,7 +63,10 @@ void commentAutomaton::S3(const std::string& input){
         inputRead++;
     }
     else {
-        Serr();
+        if(input[index] == '\n') newLines++;
+        index++;
+        inputRead++;
+        S2(input);
     }
 }
 void commentAutomaton::S4(const std::string& input){
