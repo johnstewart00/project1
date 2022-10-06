@@ -23,7 +23,8 @@ int main(int argc, char** argv) {
     Lexer* lexer = new Lexer();
 
     vector<Token*>tokenVector = lexer->Run(input);// TODO
-    string parse = Parser(tokens);
+    Parser* parse = new Parser();
+    string output = parse->Parse(tokenVector);
 
 
     return 0;

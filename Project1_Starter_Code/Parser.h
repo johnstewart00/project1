@@ -9,7 +9,9 @@
 #include <vector>
 
 class Parser {
-    Parser(vector<Token*>tokens) {};
+public:
+    Parser() {};
+private:
 };
 
 
