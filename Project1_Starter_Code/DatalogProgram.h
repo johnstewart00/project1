@@ -10,7 +10,7 @@
 class DatalogProgram {
 public:
 private:
-    vector<Predicate> schemes;
+    std::vector<Predicate> schemes;
 
 };
 
