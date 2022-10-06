@@ -20,7 +20,7 @@ public:
     Lexer();
     ~Lexer();
 
-    vector<Token> Run(string input);
+    vector<Token*> Run(string input);
     std::string toString();
 
     // TODO: add other public methods here
