@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /users/guest/j/john01/tmp/tmp.wxm60j35tJ -B /users/guest/j/john01/tmp/tmp.wxm60j35tJ/cmake-build-debug-schizo
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /users/guest/j/john01/tmp/tmp.wxm60j35tJ/cmake-build-debug-schizo

@@ -2,6 +2,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "Token.h"
+#include <vector>
 //#include "Automaton.h"
 
 using namespace std;
@@ -19,9 +21,8 @@ int main(int argc, char** argv) {
     }
     Lexer* lexer = new Lexer();
 
-    lexer->Run(input);// TODO
-    string output = lexer->toString();
-    cout << output;
+    vector<Token*>tokenVector = lexer->Run(input);// TODO
+
 
     return 0;
 }
