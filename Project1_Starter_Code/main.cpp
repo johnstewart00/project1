@@ -3,6 +3,7 @@
 #include <fstream>
 #include <string>
 #include "Token.h"
+#include "Parser.h"
 #include <vector>
 //#include "Automaton.h"
 
@@ -22,6 +23,7 @@ int main(int argc, char** argv) {
     Lexer* lexer = new Lexer();
 
     vector<Token*>tokenVector = lexer->Run(input);// TODO
+    string parse = Parser(tokens);
 
 
     return 0;

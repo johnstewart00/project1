@@ -4,10 +4,12 @@
 
 #ifndef MAIN_CPP_PARSER_H
 #define MAIN_CPP_PARSER_H
+#include "Token.h"
 #include <string>
+#include <vector>
 
 class Parser {
-    Parser(std::string);
+    Parser(vector<Token*>tokens) {};
 };
 
 
