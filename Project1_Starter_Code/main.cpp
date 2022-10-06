@@ -4,6 +4,7 @@
 #include <string>
 #include "Token.h"
 #include "Parser.h"
+#include "DatalogProgram.h"
 #include <vector>
 //#include "Automaton.h"
 
@@ -24,7 +25,7 @@ int main(int argc, char** argv) {
 
     vector<Token*>tokenVector = lexer->Run(input);// TODO
     Parser* parse = new Parser();
-    string output = parse->Parse(tokenVector);
+    DatalogProgram* output = parse->Parse(tokenVector);
 
 
     return 0;

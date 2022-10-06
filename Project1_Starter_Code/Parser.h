@@ -5,12 +5,16 @@
 #ifndef MAIN_CPP_PARSER_H
 #define MAIN_CPP_PARSER_H
 #include "Token.h"
+#include "DatalogProgram.h"
 #include <string>
 #include <vector>
 
 class Parser {
 public:
     Parser() {};
+    void Schemes(vector<Token*> tokens, DatalogProgram* program);
+    DatalogProgram* Parse(vector<Token*> tokens);
+
 private:
 };
 
