@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
     vector<Token*>tokenVector = lexer->Run(input);// TODO
     Parser* parse = new Parser();
     DatalogProgram* output = parse->Parse(tokenVector);
-
+    output->ToString();
 
     return 0;
 }

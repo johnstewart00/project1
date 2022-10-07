@@ -3,3 +3,7 @@
 //
 
 #include "DatalogProgram.h"
+
+std::string DatalogProgram::ToString() {
+    return "here";
+}

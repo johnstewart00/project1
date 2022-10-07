@@ -9,6 +9,7 @@
 
 class DatalogProgram {
 public:
+    std::string ToString();
 private:
     std::vector<Predicate> schemes;
 
