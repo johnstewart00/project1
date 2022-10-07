@@ -71,5 +71,8 @@ std::string Token::toString() {
             strtype = "COMMENT";
             break;
     }
-    return "(" + strtype + ",\"" + description + "\"," +  std::to_string(line) + ")";
+    return strtype;
+}
+std::string Token::getDescription() {
+    return description;
 }

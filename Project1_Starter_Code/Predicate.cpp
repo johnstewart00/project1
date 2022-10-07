@@ -3,3 +3,9 @@
 //
 
 #include "Predicate.h"
+void Predicate::setID(std::string newID){
+    ID = newID;
+}
+void Predicate::addParameter(Parameter* newParameter){
+    parameter.push_back(*newParameter);
+}

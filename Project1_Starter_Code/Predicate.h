@@ -10,6 +10,9 @@
 #include <vector>
 
 class Predicate {
+public:
+    void setID(std::string newID);
+    void addParameter(Parameter*);
 private:
     std::string ID;
     std::vector<Parameter>parameter;

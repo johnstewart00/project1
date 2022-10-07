@@ -3,3 +3,8 @@
 //
 
 #include "Parameter.h"
+#include <string>
+
+void Parameter::setContent(string newContent) {
+    content = newContent;
+}

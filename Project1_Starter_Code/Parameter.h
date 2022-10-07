@@ -4,10 +4,14 @@
 
 #ifndef PROJECT1_STARTER_CODE_PARAMETER_H
 #define PROJECT1_STARTER_CODE_PARAMETER_H
-
+#include <string>
+using namespace std;
 
 class Parameter {
-
+public:
+    void setContent(string);
+private:
+    std::string content;
 };
 
 

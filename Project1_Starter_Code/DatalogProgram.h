@@ -6,12 +6,20 @@
 #define PROJECT1_STARTER_CODE_DATALOGPROGRAM_H
 
 #include "Predicate.h"
+#include "Rule.h"
+#include <vector>
+using namespace std;
 
 class DatalogProgram {
 public:
+    void push_back(Predicate*, string);
     std::string ToString();
 private:
     std::vector<Predicate> schemes;
+    vector<Predicate> facts;
+    vector<Rule> rules;
+    vector<Predicate> queries;
+
 
 };
 
