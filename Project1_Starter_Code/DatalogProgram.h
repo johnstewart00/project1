@@ -14,6 +14,7 @@ class DatalogProgram {
 public:
     void push_back(Predicate*, string);
     std::string ToString();
+    void addRule(Rule* newrule);
 private:
     std::vector<Predicate> schemes;
     vector<Predicate> facts;

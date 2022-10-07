@@ -25,6 +25,10 @@ public:
     vector<Predicate*> createRuleBody(std::vector<Token*> &tokens, DatalogProgram* &program);
     void addPredicateBodyParameter(std::vector<Token*> &tokens, DatalogProgram* &program, Predicate* &param);
     void createPredicates(std::vector<Token*> &tokens, DatalogProgram* &program, vector<Predicate*> &body);
+    void createNewRule(std::vector<Token*> &tokens, DatalogProgram* &program);
+    void Queries (std::vector<Token*> &tokens, DatalogProgram* &program);
+    void createQuery(std::vector<Token*> &tokens, DatalogProgram* &program);
+    void AddQueryParameter(std::vector<Token*> &tokens, DatalogProgram* &program, Predicate* &newPredicate);
 
         private:
 

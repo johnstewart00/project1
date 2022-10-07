@@ -16,6 +16,8 @@ DatalogProgram* Parser::Parse(std::vector<Token*> tokens){
         Schemes(tokens, program);
         Facts(tokens, program);
         Rules(tokens, program);
+        Queries(tokens, program);
+        cout << "this program is almost done if it works" << endl;
     return program;
     } catch (Token* error){
         cout << "What was caught was: " << error->toString() << endl;
@@ -53,7 +55,7 @@ void Parser::Schemes(std::vector<Token*> &tokens, DatalogProgram* &program){
 
 void Parser::AddPredicate(std::vector<Token*> &tokens, DatalogProgram* &program, std::string predicateType, TokenType next){
     try {
-        cout << "In addPredicate the current token type is: " << tokens[0]->toString() << endl;
+        cout << "In addPredicate the current token type  and desc is: " << tokens[0]->toString() << ' ' << tokens[0]->getDescription() <<  endl;
         Predicate* newPredicate = new Predicate;
         newPredicate->setID(tokens[0]->getDescription());
         program->push_back(newPredicate, predicateType);
@@ -65,6 +67,9 @@ void Parser::AddPredicate(std::vector<Token*> &tokens, DatalogProgram* &program,
             }
             else if(predicateType == "facts"){
                 AddFactsParameter(tokens, program, newPredicate);
+            }
+            else if(predicateType == "queries"){
+                AddQueryParameter(tokens, program, newPredicate);
             }
             if(tokens[0]->type == TokenType::ID){
                 AddPredicate(tokens, program, predicateType, next);
@@ -187,16 +192,9 @@ void Parser::Rules(std::vector<Token*> &tokens, DatalogProgram* &program){
             tokens.erase(tokens.begin());
             if(tokens[0]->type == TokenType::COLON){
                 tokens.erase(tokens.begin());
-                Predicate* head = addHeadPredicate(tokens, program);
-                Rule* newRule = new Rule;
-                newRule->sethead(head);
-                if(tokens[0]->type == TokenType::COLON_DASH){
-                    tokens.erase(tokens.begin());
-                    vector<Predicate*> body = createRuleBody(tokens, program);
-                    newRule->setbody(body);
-                } else {
-                    throw(tokens[0]);
-                }
+                createNewRule(tokens, program);
+                cout << "created all rules" << endl;
+                return;
             }
             else {
                 throw tokens[0];
@@ -210,6 +208,32 @@ void Parser::Rules(std::vector<Token*> &tokens, DatalogProgram* &program){
         exit(0);
     }
 }
+void Parser::createNewRule(std::vector<Token*> &tokens, DatalogProgram* &program){
+    try {
+        Predicate *head = addHeadPredicate(tokens, program);
+        Rule *newRule = new Rule;
+        newRule->sethead(head);
+        if (tokens[0]->type == TokenType::COLON_DASH) {
+            tokens.erase(tokens.begin());
+            vector<Predicate *> body = createRuleBody(tokens, program);
+            newRule->setbody(body);
+            program->addRule(newRule);
+            if(tokens[0]->type == TokenType::QUERIES){
+                return;
+            } else if(tokens[0]->type == TokenType::ID){
+                createNewRule(tokens, program);
+            } else{
+                throw(tokens[0]);
+            }
+        } else {
+            throw (tokens[0]);
+        }
+    } catch (Token Error){
+        cout << "What was caught was: " << Error.toString() << endl;
+        exit(0);
+    }
+}
+
 
 Predicate* Parser::addHeadPredicate(std::vector<Token*> &tokens, DatalogProgram* &program){
     cout << "Creating a Head Predicate for Rules for: " << tokens[0]->getDescription() << endl;
@@ -265,13 +289,10 @@ void Parser::addPredicateHeadParameter(std::vector<Token*> &tokens, DatalogProgr
 vector<Predicate*> Parser::createRuleBody(std::vector<Token*> &tokens, DatalogProgram* &program) {
     cout << "creating rules body" << endl;
     vector<Predicate *> vectorOfPredicates;
-    if(tokens[0]->type == TokenType::ID){
-        createPredicates(tokens, program, vectorOfPredicates);
-    }
+    createPredicates(tokens, program, vectorOfPredicates);
     return vectorOfPredicates;
 }
 
-//void Parser::wrapper make wrapper function to recusrively call createPredicates instead of calling it from CreateRule Body
 
 void Parser::createPredicates(std::vector<Token*> &tokens, DatalogProgram* &program, vector<Predicate*> &body){\
 cout << "creating rule body predicates" << endl;
@@ -311,7 +332,7 @@ void Parser::addPredicateBodyParameter(std::vector<Token*> &tokens, DatalogProgr
     cout << "creating rule body predicate parameters" << endl;
     cout << "in addPredicateBodyParameter with tokens[0]: " << tokens[0]->getDescription() << endl;
     try {
-        if (tokens[0]->type == TokenType::ID) {
+        if (tokens[0]->type == TokenType::ID or tokens[0]->type == TokenType::STRING) {
             Parameter *newparameter = new Parameter;
             newparameter->setContent(tokens[0]->getDescription());
             pred->addParameter(newparameter);
@@ -332,6 +353,80 @@ void Parser::addPredicateBodyParameter(std::vector<Token*> &tokens, DatalogProgr
         }
     } catch(Token Error){
         cout << "What was caught was: " << Error.toString() << endl;
+        exit(0);
+    }
+}
+
+void Parser::Queries (std::vector<Token*> &tokens, DatalogProgram* &program) {
+    try{
+        cout << "Made it to Queries with token[0]: " << tokens[0]->getDescription() << endl;
+        if(tokens[0]->type == TokenType::QUERIES){
+            tokens.erase(tokens.begin());
+            if(tokens[0]->type == TokenType::COLON){
+                tokens.erase(tokens.begin());
+                createQuery(tokens, program);
+                return;
+            }
+            else {
+                throw tokens[0];
+            }
+        }
+        else {
+            throw(tokens[0]);
+        }
+    } catch(Token Error){
+        cout << "What was caught was: " << Error.toString() << endl;
+        exit(0);
+    }
+}
+
+void Parser::createQuery(std::vector<Token*> &tokens, DatalogProgram* &program){
+    try {
+//        if (tokens[0]->type == TokenType::ID) {
+//            tokens.erase(tokens.begin());
+//            if(tokens[0]->type == TokenType::LEFT_PAREN){
+//                tokens.erase(tokens.begin());
+                AddPredicate(tokens, program, "queries", TokenType::EOF_TYPE);
+                cout << "we should have gotten all the queries now" << endl;
+                return;
+//            } else {
+//                throw (tokens[0]);
+//            }
+//        } else {
+//            throw (tokens[0]);
+//        }
+    } catch(Token Error){
+        cout << "What was caught was: " << Error.toString() << endl;
+        exit(0);
+    }
+}
+void Parser::AddQueryParameter(std::vector<Token*> &tokens, DatalogProgram* &program, Predicate* &newPredicate){
+    try {
+        cout << "in AddQuery Parameter" << endl;
+        if (tokens[0]->type == TokenType::ID or tokens[0]->type == TokenType::STRING) {
+            Parameter *newParameter = new Parameter;
+            newParameter->setContent(tokens[0]->getDescription());
+            newPredicate->addParameter(newParameter);
+            tokens.erase(tokens.begin());
+            if (tokens[0]->type == TokenType::COMMA) {
+                tokens.erase(tokens.begin());
+                AddQueryParameter(tokens, program, newPredicate);
+            } else if (tokens[0]->type == TokenType::RIGHT_PAREN) {
+                tokens.erase(tokens.begin());
+                if(tokens[0]->type == TokenType::Q_MARK){
+                    tokens.erase(tokens.begin());
+                } else {
+                    throw (tokens[0]);
+                }
+                return;
+            } else {
+                throw (tokens[0]);
+            }
+        } else {
+            throw (tokens[0]);
+        }
+    } catch(Token* Error){
+        cout << "What was caught was: " << Error->toString() << endl;
         exit(0);
     }
 }
