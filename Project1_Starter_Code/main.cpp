@@ -13,8 +13,6 @@ using namespace std;
 int main(int argc, char** argv) {
 
     ifstream ifs(argv[1]);
-    //string test = "C:\\Users\\stewj\\html\\test.txt";
-   // ifstream ifs(test);
     string input;
     while (!ifs.eof()){
         string line;
@@ -25,6 +23,10 @@ int main(int argc, char** argv) {
 
     vector<Token*>tokenVector = lexer->Run(input);// TODO
     Parser* parse = new Parser();
+//    for (int i=0; i<tokenVector.size(); i++){
+//        cout << "tokenType: " << tokenVector[i]->toString() << endl;
+//        cout << "Description: " << tokenVector[i]->getDescription() << endl << endl;
+//    }
     DatalogProgram* output = parse->Parse(tokenVector);
     output->ToString();
 

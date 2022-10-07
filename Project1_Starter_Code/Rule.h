@@ -8,9 +8,12 @@
 using namespace std;
 
 class Rule {
+public:
+    void sethead(Predicate*);
+    void setbody(vector<Predicate*>newbody);
 private:
     Predicate head;
-    vector<Predicate> body;
+    vector<Predicate*> body;
 };
 
 
