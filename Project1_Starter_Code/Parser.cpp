@@ -156,7 +156,13 @@ void Parser::Facts(std::vector<Token*> tokens, DatalogProgram* program){
 void Parser::Rules(std::vector<Token*> tokens, DatalogProgram* program){
     try{
         if(tokens[0]->type == TokenType::RULES){
-
+            tokens.erase(tokens.begin());
+            if(tokens[0]->type == TokenType::COLON){
+                addHeadPredicate(tokens, program);
+            }
+            else {
+                throw tokens[0];
+            }
         }
         else {
             throw(tokens[0]);
@@ -164,5 +170,9 @@ void Parser::Rules(std::vector<Token*> tokens, DatalogProgram* program){
     } catch(Token Error){
         exit(0);
     }
+}
+
+void Parser::addHeadPredicate(std::vector<Token*>tokens, DatalogProgram* program){
+
 }
 

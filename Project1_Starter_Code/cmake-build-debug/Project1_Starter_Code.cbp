@@ -8,201 +8,203 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug"/>
+				<Option working_dir="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Project1_Starter_Code">
-				<Option output="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Project1_Starter_Code.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/."/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project1_Starter_Code"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Project1_Starter_Code/fast">
-				<Option output="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Project1_Starter_Code.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/."/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project1_Starter_Code/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug"/>
+				<Option working_dir="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project1_Starter_Code">
+				<Option output="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Project1_Starter_Code" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project1_Starter_Code"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project1_Starter_Code/fast">
+				<Option output="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Project1_Starter_Code" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project1_Starter_Code/fast"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Add.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Add.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Add.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Add.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Automaton.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Automaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/ColonAutomaton.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/ColonAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/ColonAutomaton.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/ColonAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/ColonDashAutomaton.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/ColonDashAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/ColonDashAutomaton.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/ColonDashAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/CommaAutomaton.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/CommaAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/CommaAutomaton.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/CommaAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Facts.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Facts.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Facts.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Facts.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/IDAutomaton.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/IDAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/IDAutomaton.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/IDAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/LeftParenAutomaton.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/LeftParenAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/LeftParenAutomaton.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/LeftParenAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Lexer.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Lexer.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Lexer.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Lexer.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Multiply.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Multiply.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Multiply.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Multiply.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/PeriodAutomaton.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/PeriodAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/PeriodAutomaton.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/PeriodAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Q_MarkAutomaton.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Q_MarkAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Q_MarkAutomaton.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Q_MarkAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Queries.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Queries.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Queries.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Queries.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/RightParen.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/RightParen.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/RightParen.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/RightParen.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Rules.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Rules.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Rules.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Rules.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Schemes.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Schemes.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Schemes.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Schemes.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Token.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Token.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Token.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Token.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/commentAutomaton.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/commentAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/commentAutomaton.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/commentAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/main.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/main.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/stringAutomaton.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/stringAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/stringAutomaton.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/stringAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/undefinedAutomaton.cpp">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/undefinedAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/undefinedAutomaton.h">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/undefinedAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="C:/Users/stewj/Downloads/project1/Project1_Starter_Code/CMakeLists.txt">
+		<Unit filename="/users/guest/j/john01/tmp/tmp.CEst6hHX9o/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

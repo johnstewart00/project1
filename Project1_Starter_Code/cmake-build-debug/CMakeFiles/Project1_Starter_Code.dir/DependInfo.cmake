@@ -1,43 +1,35 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Add.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Add.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/ColonAutomaton.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/ColonAutomaton.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/ColonDashAutomaton.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/ColonDashAutomaton.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/CommaAutomaton.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Facts.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Facts.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/IDAutomaton.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/IDAutomaton.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/LeftParenAutomaton.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Lexer.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Multiply.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Multiply.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/PeriodAutomaton.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Q_MarkAutomaton.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Q_MarkAutomaton.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Queries.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Queries.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/RightParen.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/RightParen.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Rules.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Rules.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Schemes.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Schemes.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/Token.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Token.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/commentAutomaton.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/commentAutomaton.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/main.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/main.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/stringAutomaton.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/stringAutomaton.cpp.obj"
-  "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/undefinedAutomaton.cpp" "C:/Users/stewj/Downloads/project1/Project1_Starter_Code/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/undefinedAutomaton.cpp.obj"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Add.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Add.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/ColonAutomaton.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/ColonAutomaton.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/ColonDashAutomaton.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/ColonDashAutomaton.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/CommaAutomaton.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Facts.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Facts.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/IDAutomaton.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/IDAutomaton.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/LeftParenAutomaton.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Lexer.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Multiply.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Multiply.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/PeriodAutomaton.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Q_MarkAutomaton.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Q_MarkAutomaton.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Queries.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Queries.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/RightParen.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/RightParen.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Rules.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Rules.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Schemes.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Schemes.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/Token.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Token.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/commentAutomaton.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/commentAutomaton.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/main.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/main.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/stringAutomaton.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/stringAutomaton.cpp.o"
+  "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/undefinedAutomaton.cpp" "/users/guest/j/john01/tmp/tmp.CEst6hHX9o/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/undefinedAutomaton.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../."
-  )
-
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
   )
 
 # Targets to which this target links.

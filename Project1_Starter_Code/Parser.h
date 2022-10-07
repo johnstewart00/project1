@@ -20,8 +20,10 @@ public:
     void AddFactsParameter(std::vector<Token*> tokens, DatalogProgram* program, Predicate* newPredicate);
     void Rules(std::vector<Token*> tokens, DatalogProgram* program);
     void Facts(std::vector<Token*> tokens, DatalogProgram* program);
+    void addHeadPredicate(std::vector<Token*>tokens, DatalogProgram* program);
 
-private:
+
+        private:
 
 
     };

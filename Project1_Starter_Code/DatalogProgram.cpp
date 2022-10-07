@@ -5,7 +5,7 @@
 #include "DatalogProgram.h"
 
 std::string DatalogProgram::ToString() {
-    return "here";
+    return "Datalog ToString function";
 }
 
 void DatalogProgram::push_back(Predicate* userPredicate, std::string type) {
