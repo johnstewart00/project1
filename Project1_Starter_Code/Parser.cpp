@@ -147,6 +147,7 @@ void Parser::Facts(std::vector<Token*> tokens, DatalogProgram* program){
         } else {
             throw (tokens[0]);
         }
+
     } catch (Token Error){
         exit(0);
     }
