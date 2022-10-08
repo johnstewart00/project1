@@ -8,6 +8,8 @@
 #include "Predicate.h"
 #include "Rule.h"
 #include <vector>
+#include "Token.h"
+#include <set>
 using namespace std;
 
 class DatalogProgram {
@@ -15,11 +17,15 @@ public:
     void push_back(Predicate*, string);
     void ToString();
     void addRule(Rule* newrule);
+    void insertDomain(string element);
+
+
 private:
     std::vector<Predicate> schemes;
     vector<Predicate> facts;
     vector<Rule> rules;
     vector<Predicate> queries;
+    set<string> domain;
 
 
 };

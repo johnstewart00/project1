@@ -29,7 +29,6 @@ public:
     void Queries (std::vector<Token*> &tokens, DatalogProgram* &program);
     void createQuery(std::vector<Token*> &tokens, DatalogProgram* &program);
     void AddQueryParameter(std::vector<Token*> &tokens, DatalogProgram* &program, Predicate* &newPredicate);
-
         private:
 
 

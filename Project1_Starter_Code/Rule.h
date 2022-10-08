@@ -11,6 +11,8 @@ class Rule {
 public:
     void sethead(Predicate*);
     void setbody(vector<Predicate*>newbody);
+    vector<Predicate*> returnPredicates();
+    Predicate getHead();
 private:
     Predicate head;
     vector<Predicate*> body;

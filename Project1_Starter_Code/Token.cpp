@@ -1,4 +1,7 @@
 #include "Token.h"
+#include <string>
+#include <iostream>
+using namespace std;
 
 Token::Token(){
 //    TokenType::UNDEFINED;
@@ -75,4 +78,12 @@ std::string Token::toString() {
 }
 std::string Token::getDescription() {
     return description;
+}
+void Token::failure(string type, std::string description, int line) {
+    cout << "Failure!" << endl;
+    cout << "  (" << type << ",\"" << description << "\"," << line << ")";
+    exit(0);
+}
+int Token::getLine(){
+    return line;
 }

@@ -1,6 +1,7 @@
 #ifndef TOKEN_H
 #define TOKEN_H
 #include <string>
+using namespace std;
 
 enum class TokenType {
     COLON,
@@ -33,6 +34,8 @@ private:
     // TODO: add member variables for information needed by Token
 
 public:
+    int getLine();
+    void failure(string, string, int);
     std::string getDescription();
     TokenType type;
     Token();

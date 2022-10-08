@@ -11,4 +11,13 @@ void Rule::sethead(Predicate* newHead){
 void Rule::setbody(vector<Predicate*>newBody){
     body = newBody;
 }
+vector<Predicate*> Rule::returnPredicates(){
+    return body;
+}
+
+Predicate Rule::getHead(){
+    return head;
+}
+
+
 

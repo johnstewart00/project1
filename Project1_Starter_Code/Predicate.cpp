@@ -15,5 +15,9 @@ std::string Predicate::returnID(){
 vector<Parameter> Predicate::returnParameters(){
     return parameter;
 }
+void Predicate::setParameters(vector<Parameter> newParameters){
+    parameter = newParameters;
+}
+
 
 
