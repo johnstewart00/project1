@@ -1,0 +1,73 @@
+//
+// Created by stewj on 9/20/2022.
+//
+
+#include "Queries.h"
+void Queries::S0(const std::string &input) {
+    if(input[index]=='Q'){
+        inputRead++;
+        index++;
+        S1(input);
+    }
+    else {
+        Serr();
+    }
+}
+void Queries::S1(const std::string &input) {
+    if(input[index]=='u'){
+        inputRead++;
+        index++;
+        S2(input);
+    }
+    else {
+        Serr();
+    }
+}
+void Queries::S2(const std::string &input) {
+    if(input[index]=='e'){
+        inputRead++;
+        index++;
+        S3(input);
+    }
+    else {
+        Serr();
+    }
+}
+void Queries::S3(const std::string &input) {
+    if(input[index]=='r'){
+        inputRead++;
+        index++;
+        S4(input);
+    }
+    else {
+        Serr();
+    }
+}
+void Queries::S4(const std::string &input) {
+    if(input[index]=='i'){
+        inputRead++;
+        index++;
+        S5(input);
+    }
+    else {
+        Serr();
+    }
+}
+void Queries::S5(const std::string &input) {
+    if(input[index]=='e'){
+        inputRead++;
+        index++;
+        S6(input);
+    }
+    else {
+        Serr();
+    }
+}
+void Queries::S6(const std::string &input) {
+    if(input[index]=='s'){
+        inputRead++;
+    }
+    else {
+        Serr();
+    }
+}
