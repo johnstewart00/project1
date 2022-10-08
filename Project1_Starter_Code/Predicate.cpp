@@ -9,3 +9,11 @@ void Predicate::setID(std::string newID){
 void Predicate::addParameter(Parameter* newParameter){
     parameter.push_back(*newParameter);
 }
+std::string Predicate::returnID(){
+    return ID;
+}
+vector<Parameter> Predicate::returnParameters(){
+    return parameter;
+}
+
+

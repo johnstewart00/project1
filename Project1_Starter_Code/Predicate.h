@@ -13,6 +13,8 @@ class Predicate {
 public:
     void setID(std::string newID);
     void addParameter(Parameter*);
+    std::string returnID();
+    vector<Parameter> returnParameters();
 private:
     std::string ID;
     std::vector<Parameter>parameter;

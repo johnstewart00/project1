@@ -8,3 +8,7 @@
 void Parameter::setContent(string newContent) {
     content = newContent;
 }
+string Parameter::returnContent(){
+    return content;
+}
+

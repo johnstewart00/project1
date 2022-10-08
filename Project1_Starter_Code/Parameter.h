@@ -10,6 +10,7 @@ using namespace std;
 class Parameter {
 public:
     void setContent(string);
+    string returnContent();
 private:
     std::string content;
 };

@@ -58,7 +58,6 @@ void Parser::AddPredicate(std::vector<Token*> &tokens, DatalogProgram* &program,
         cout << "In addPredicate the current token type  and desc is: " << tokens[0]->toString() << ' ' << tokens[0]->getDescription() <<  endl;
         Predicate* newPredicate = new Predicate;
         newPredicate->setID(tokens[0]->getDescription());
-        program->push_back(newPredicate, predicateType);
         tokens.erase(tokens.begin());
         if(tokens[0]->type == TokenType::LEFT_PAREN) {
             tokens.erase(tokens.begin());
@@ -72,6 +71,7 @@ void Parser::AddPredicate(std::vector<Token*> &tokens, DatalogProgram* &program,
                 AddQueryParameter(tokens, program, newPredicate);
             }
             if(tokens[0]->type == TokenType::ID){
+                program->push_back(newPredicate, predicateType);
                 AddPredicate(tokens, program, predicateType, next);
             }
             else if(tokens[0]->type == next){
@@ -101,6 +101,7 @@ void Parser::AddSchemesParameter(std::vector<Token*> &tokens, DatalogProgram* &p
             Parameter *newParameter = new Parameter;
             newParameter->setContent(tokens[0]->getDescription());
             newPredicate->addParameter(newParameter);
+            //program->push_back(newPredicate, "schemes"); // added code
             tokens.erase(tokens.begin());
             if (tokens[0]->type == TokenType::COMMA) {
                 tokens.erase(tokens.begin());
