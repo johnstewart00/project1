@@ -12,62 +12,68 @@ void DatalogProgram::ToString() {
     cout << "Success!" << endl;
 
     cout << "Schemes(" << schemes.size() << "):" << endl;
-    for(int i = 0; i<schemes.size(); i++){
+    for(unsigned int i = 0; i<schemes.size(); i++){
         vector<Parameter> schemeParameters = schemes[i].returnParameters();
         if(schemeParameters.size() == 0) cout << "its empty" << endl;
         cout << "  " << schemes[i].returnID() << '(';
-        for (int j=0; j<schemeParameters.size(); j++){
+        for (unsigned int j=0; j<schemeParameters.size(); j++){
             cout << schemeParameters[j].returnContent();
-            if(j != schemeParameters.size()-1) cout << ',';
+            unsigned int dud =1;
+            if(j != schemeParameters.size()-dud) cout << ',';
         }
         cout << ')' << endl;
     }
     cout << "Facts(" << facts.size() << "):" << endl;
-    for(int i = 0; i<facts.size(); i++){
+    for(unsigned int i = 0; i<facts.size(); i++){
         vector<Parameter> factParameters = facts[i].returnParameters();
         if(factParameters.size() == 0) cout << "its empty" << endl;
         cout << "  " << facts[i].returnID() << '(';
-        for (int j=0; j<factParameters.size(); j++){
+        for (unsigned int j=0; j<factParameters.size(); j++){
             cout << factParameters[j].returnContent();
-            if(j != factParameters.size()-1) cout << ',';
+            unsigned int dud =1;
+            if(j != factParameters.size()-dud) cout << ',';
 
         }
         cout << ")." << endl;
     }
     cout << "Rules(" << rules.size() << "):" << endl;
-    for(int i = 0; i<rules.size(); i++){
+    for(unsigned int i = 0; i<rules.size(); i++){
         Predicate temp = rules[i].getHead();
         cout <<"  " << temp.returnID() << '(';
         vector<Parameter> headParameters = temp.returnParameters();
-        for (int i=0; i<headParameters.size(); i++){
+        for (unsigned int i=0; i<headParameters.size(); i++){
             cout << headParameters[i].returnContent();
-            if(i != headParameters.size()-1) cout << ',';
+            unsigned int dud =1;
+            if(i != headParameters.size()-dud) cout << ',';
 
         }
         cout << ") :- ";
         vector<Predicate*> rulePredicates = rules[i].returnPredicates();
-        for (int j=0; j<rulePredicates.size(); j++){
+        for (unsigned int j=0; j<rulePredicates.size(); j++){
             cout << rulePredicates[j]->returnID() << '(';
             vector<Parameter> bodyParameters = rulePredicates[j]->returnParameters();
-            for (int k=0; k<bodyParameters.size(); k++){
+            for (unsigned int k=0; k<bodyParameters.size(); k++){
                 cout << bodyParameters[k].returnContent();
-                if(k != bodyParameters.size()-1) cout << ',';
+                unsigned int dud =1;
+                if(k != bodyParameters.size()-dud) cout << ',';
             }
             cout << ')';
-            if(j != rulePredicates.size()-1){
+            unsigned int temp =1;
+            if(j != rulePredicates.size()-temp){
                 cout << ",";
             }
         }
         cout <<'.' <<  endl;
     }
     cout << "Queries(" << queries.size() << "):" << endl;
-    for(int i = 0; i<queries.size(); i++){
+    for(unsigned int i = 0; i<queries.size(); i++){
         vector<Parameter> schemeParameters = queries[i].returnParameters();
         if(schemeParameters.size() == 0) cout << "its empty" << endl;
         cout << "  " << queries[i].returnID() << '(';
-        for (int j=0; j<schemeParameters.size(); j++){
+        for (unsigned int j=0; j<schemeParameters.size(); j++){
             cout << schemeParameters[j].returnContent();
-            if(j != schemeParameters.size()-1) cout << ',';
+            unsigned int temp =1;
+            if(j != schemeParameters.size()-temp) cout << ',';
         }
         cout << ")?" << endl;
     }
