@@ -3,3 +3,10 @@
 //
 
 #include "Tuple.h"
+void Tuple::setValues(vector<string> newValues){
+    values = newValues;
+}
+vector<string> Tuple::getValues() const{
+    return values;
+}
+

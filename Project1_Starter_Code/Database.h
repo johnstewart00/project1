@@ -7,10 +7,18 @@
 #include <map>
 #include "Relation.h"
 #include <string>
+#include "DatalogProgram.h"
+#include "Predicate.h"
+#include "Header.h"
+#include "Tuple.h"
+#include <map>
 
 class Database {
+public:
+    void createDatabase(DatalogProgram* output);
+    void printDatabase();
 private:
-    std::map<std::string,Relation*> relations; // string is name of scheme
+    std::map<std::string,Relation*> relations; // string is name of scheme, each scheme will have its own relation in the database
 };
 
 

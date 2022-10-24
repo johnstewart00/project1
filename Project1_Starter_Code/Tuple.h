@@ -12,8 +12,10 @@ class Tuple {
 private:
     vector<string> values;
 public:
-    bool operator< (const Tuple & other) const {
-        return false; // change this
+    vector<string> getValues() const;
+    void setValues(vector<string> newValues);
+    bool operator< (const Tuple &rhs) const{ // removed const from before the {
+        return values < rhs.values;
     }
 };
 

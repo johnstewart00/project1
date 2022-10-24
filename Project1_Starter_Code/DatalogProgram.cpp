@@ -105,5 +105,24 @@ void DatalogProgram::addRule(Rule* newrule){
 void DatalogProgram::insertDomain ( string element){
     domain.insert( element);
 }
+vector<Predicate> DatalogProgram::getElement(std::string type) {
+    if(type == "schemes"){
+        return schemes;
+    }
+    else if (type == "facts"){
+        return facts;
+    }
+    else if (type == "queries"){
+        return queries;
+    }
+    else {
+        cout << "you didn't get anything, ending program" << endl;
+        exit(0);
+    }
+}
+vector<Rule> DatalogProgram::getRules() {
+    return rules;
+}
+
 
 

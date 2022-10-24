@@ -18,16 +18,14 @@ public:
     void ToString();
     void addRule(Rule* newrule);
     void insertDomain(string element);
-
-
+    vector<Predicate> getElement(string type);
+    vector<Rule> getRules();
 private:
     std::vector<Predicate> schemes;
     vector<Predicate> facts;
     vector<Rule> rules;
     vector<Predicate> queries;
     set<string> domain;
-
-
 };
 
 

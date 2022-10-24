@@ -11,9 +11,17 @@
 using namespace std;
 
 class Relation {
+public:
+    Tuple select(string Attribute, string value);
+    void setName(string newname);
+    void setHeader(Header* newHeader);
+    void setRows(set<Tuple> newRows);
+    string getName();
+    Header* getHeader();
+    set<Tuple> getRows();
 private:
     std::string name;
-    Header* header;
+    Header* header; // predicates
     set<Tuple> rows;
 };
 
