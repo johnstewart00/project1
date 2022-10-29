@@ -11,6 +11,7 @@ class Parameter {
 public:
     void setContent(string);
     string returnContent();
+    bool isConstant = false;
 private:
     std::string content;
 };

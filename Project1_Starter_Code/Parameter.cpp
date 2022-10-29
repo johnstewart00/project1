@@ -7,6 +7,9 @@
 
 void Parameter::setContent(string newContent) {
     content = newContent;
+    if(newContent.at(0) == '\'' && newContent.at(newContent.size()-1) == '\''){
+        isConstant = true;
+    }
 }
 string Parameter::returnContent(){
     return content;

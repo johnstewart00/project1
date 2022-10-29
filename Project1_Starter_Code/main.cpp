@@ -7,6 +7,7 @@
 #include "DatalogProgram.h"
 #include <vector>
 #include "Database.h"
+#include "Interpreter.h"
 //#include "Automaton.h"
 
 using namespace std;
@@ -30,9 +31,11 @@ int main(int argc, char** argv) {
 //    }
     DatalogProgram* output = parse->Parse(tokenVector);
     output->ToString();
-    Database* database = new Database();
-    database->createDatabase(output);
-    database->printDatabase();
+    Interpreter* newinterpreter = new Interpreter;
+    Database* newDatabase = new Database;
+    newDatabase  = newinterpreter->createDatabase(output);
+    newinterpreter->printDatabase(newDatabase);
+    newinterpreter->EvaluateAllQueries(output);
 
     return 0;
 }

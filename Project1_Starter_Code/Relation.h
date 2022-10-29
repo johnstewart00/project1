@@ -12,7 +12,8 @@ using namespace std;
 
 class Relation {
 public:
-    Tuple select(string Attribute, string value);
+    Relation* select(string column, string value);
+    Relation* select(int index, int otherIndex);
     void setName(string newname);
     void setHeader(Header* newHeader);
     void setRows(set<Tuple> newRows);

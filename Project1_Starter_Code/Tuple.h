@@ -10,8 +10,9 @@ using namespace std;
 
 class Tuple {
 private:
-    vector<string> values;
+
 public:
+    vector<string> values;
     vector<string> getValues() const;
     void setValues(vector<string> newValues);
     bool operator< (const Tuple &rhs) const{ // removed const from before the {
